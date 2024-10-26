@@ -1,18 +1,18 @@
-#==-:> SID% TOKEN-INSTRUCT - FILE (0X9FD)
+#==-:> POWE5 TOKEN-INSTRUCT - FILE (0X9FD)
 
- SID% TOKEN
+POWE5 TOKEN
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:: FILE_ENTRY :  SID% (Token_ID_0xDFT-P64) :::::::::::::::::::::::::::::::::::
+:: FILE_ENTRY :  POWE5 (Token_ID_0xDFT-P64) :::::::::::::::::::::::::::::::::::
 
->>  SID%-Layer_Protocol.vx:
+>>  POWE5-Layer_Protocol.vx:
     00100111 01101111 01100100 00101101 01110000 00110111 01110111 00110110
     [TOKEN_STRUCTURE]:{INIT_BYTE}[0x0C32]
     - Generate_Pipeline[tok-in](function){stack_seq=8192bits};
 
 >> DoGPT_Token_ID : DoGPT_Type(03) ::
-    [ SID%]:    
+    [POWE5]:    
     - Layer[32]-> Depth(24) - Positional_Enc[2048bit]
     - Split_: Data_Tok:0x5B67 , Model_Call:Init-{7xFToken} 
     - Classify_[Mem]:[2E][Hash_02Ax]
